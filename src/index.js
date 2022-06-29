@@ -1,5 +1,7 @@
+import "./styles/hover.css";
 import "./styles/main.css";
 import meals from "./assets/data/meals";
+import faqs from "./assets/data/faqs";
 
 const renderMeals = (type) => {
   const mealsGridDIV = document.querySelector(".meals-grid");
@@ -20,7 +22,7 @@ const renderMeals = (type) => {
                 <div class="rating">
                     <div class="star-icon">
                     </div>
-                    <div class="rating-text">${rating}/5</div>
+                    <div class="rating-text">${rating.toFixed(1)}/5</div>
                 </div>
             </section>
         </section>
@@ -30,7 +32,22 @@ const renderMeals = (type) => {
   });
 };
 
-const renderMealsEventListener = () => {
+const renderFAQs = () => {
+  const faqsDIV = document.querySelector(".faqs");
+  faqsDIV.innerHTML = "";
+
+  faqs.forEach((faq) => {
+    const faqHTML = `<div class="question-container">
+    <div class="question">${faq.question}</div>
+    <button class="open-close-btn hvr-grow">+</button>
+<p class="answer" hidden>${faq.answer}</p>
+</div>`;
+
+    faqsDIV.innerHTML += faqHTML;
+  });
+};
+
+const addMealsEventListener = () => {
   document.getElementById("breakfast").addEventListener("click", () => {
     renderMeals("Breakfast");
   });
@@ -44,4 +61,25 @@ const renderMealsEventListener = () => {
   });
 };
 
-renderMealsEventListener();
+const addAnswerEventListener = () => {
+  const faqsDIV = document.querySelector(".faqs");
+  const faqHTMLNodes = faqsDIV.childNodes;
+
+  faqHTMLNodes.forEach((faqNode) => {
+    const openCloseBtn = faqNode.childNodes[3];
+    openCloseBtn.addEventListener("click", () => {
+      const answerDIV = faqNode.childNodes[5];
+      openCloseBtn.textContent = answerDIV.hidden ? "-" : "+";
+      answerDIV.hidden = !answerDIV.hidden;
+    });
+  });
+};
+
+const firstRender = () => {
+  renderMeals("Breakfast");
+  renderFAQs();
+  addAnswerEventListener();
+};
+
+firstRender();
+addMealsEventListener();
