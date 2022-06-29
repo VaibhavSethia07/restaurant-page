@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding:  0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 0px 120px 0px 80px;
+    z-index: 1;
+    gap: 100px;
+}
+
+.company-name-large {
+    font-size: 3rem;
+}
+
+.company-name-large a, .company-name-large:visited {
+    color: rgb(252,95,47);
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    font-size: 1.2rem;
+}
+
+.nav-options a, .nav-options a:visited {
+    color: rgb(82,86,103);
+}
+
+.home-page {
+    height: 764px;
+    /* <a href='https://www.freepik.com/photos/food-ingredients'>Food ingredients photo created by freepik - www.freepik.com</a> */
+    background-image: url('../assets/backgrounds/fresh-colourful-ingredients-mexican-cuisine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.advertisement-container {
+   position: absolute;
+   top: 200px;
+   left:80px;
+   display: flex;
+   gap: 20px;
+}
+
+.catchy-line {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.catchy-line-2 {     
+    font-family: 'Open Sans', sans-serif;
+    font-weight:100;
+    font-size: 3.6rem;
+}
+.quote-text {
+    color: rgb(98, 100, 101);
+    max-width: 600px;
+    padding-bottom: 4px;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.location-container {
+    background-color: rgb(254,87,34, 0.5);
+    padding: 20px;
+    max-width: 450px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+.address, .time {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+
+.day-time-container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.day {
+    padding-right: 2px;
+}
+
+.address-text, .time-text {
+    width: 100%;
+}
+
+.meal-choice-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.meal-choices {
+    display: flex;
+    gap: 20px;
+}
+
+.meal-btn, .order-btn {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.meal-btn:hover, .order-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.meal-btn:active, .order-btn:active {
+  transform: scale(0.95);
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    padding: 30px 80px 80px 80px;
+}
+
+.meal-tile {
+    max-width: 370px;
+    max-height: 500px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 10px;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.meal-tile:hover {
+    transform: scale(1.1);
+  }
+
+.meal-image, img {
+    height: 230px;
+    width: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.meal-content {
+    padding: 10px 5px;
+}
+
+.meal-title {
+    background-color: white;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.meal-description {
+    text-transform: capitalize;
+    height: 100px;
+}
+
+.price-rating-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.price {
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.price:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rating {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.star-icon {
+    background-image: url('../assets/icons/star.png');
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.rating-text {
+    letter-spacing: 0.5px;
+}
+/* <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a> */
+
+
+
+
+
+
+
+
+
