@@ -22,23 +22,23 @@ const renderFooterPage = () => {
     </div>
     <div class="useful-info">
         <div class="heading">Support</div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Account</a> </div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Support Center</a> </div>
+    <div class="useful-text"><a href="#">Account</a> </div>
+    <div class="useful-text"><a href="#">Support Center</a> </div>
     <div class="useful-text"><a href="#" rel="noopener noreferrer">Feedback</a> </div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Accessibility</a> </div>
+    <div class="useful-text"><a href="#">Accessibility</a> </div>
     </div>
     <div class="useful-info">
         <div class="heading">Our Menu</div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Special</a> </div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Popular</a> </div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Categories</a> </div>
+    <div class="useful-text"><a href="#">Special</a> </div>
+    <div class="useful-text"><a href="#">Popular</a> </div>
+    <div class="useful-text"><a href="#">Categories</a> </div>
     </div>
     <div class="useful-info">
         <div class="heading">Useful Links</div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Payment & Tax</a></div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Terms of Service</a></div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">Privacy Policy</a></div>
-    <div class="useful-text"><a href="#" rel="noopener noreferrer">About us</a></div>
+    <div class="useful-text"><a href="#">Payment & Tax</a></div>
+    <div class="useful-text"><a href="#">Terms of Service</a></div>
+    <div class="useful-text"><a href="#">Privacy Policy</a></div>
+    <div class="useful-text"><a href="#">About us</a></div>
     </div>
     <div class="useful-info">
         <div class="heading">Get in touch</div>

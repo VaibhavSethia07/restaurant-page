@@ -1,0 +1,74 @@
+#home-page {
+    height: 764px;
+    background-image: url('../assets/backgrounds/fresh-colourful-ingredients-mexican-cuisine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.advertisement-container {
+   position: absolute;
+   top: 200px;
+   left:80px;
+   display: flex;
+   gap: 20px;
+}
+
+.catchy-line {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.catchy-line-2 {     
+    font-family: 'Open Sans', sans-serif;
+    font-weight:100;
+    font-size: 3.6rem;
+}
+.quote-text {
+    color: rgb(98, 100, 101);
+    max-width: 600px;
+    padding-bottom: 4px;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.location-container {
+    background-color: rgb(254,87,34, 0.5);
+    padding: 20px;
+    max-width: 450px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+.address, .time {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+
+.day-time-container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.day {
+    padding-right: 2px;
+}
+
+.address-text, .time-text {
+    width: 100%;
+}

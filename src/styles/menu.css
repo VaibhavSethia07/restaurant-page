@@ -1,0 +1,121 @@
+#menu-page {
+    background-image: url('../assets/backgrounds/augustine-wong-li0iC0rjvvg-unsplash.jpg');
+    padding-top: 40px;
+}
+
+.meal-choice-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.meal-choices {
+    display: flex;
+    gap: 20px;
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    padding: 30px 80px 80px 80px;
+}
+
+.meal-tile {
+    max-width: 390px;
+    max-height: 520px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.meal-tile:hover {
+    transform: scale(1.1);
+  }
+
+.meal-image, img {
+    height: 230px;
+    width: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.meal-content {
+    padding: 10px 5px;
+}
+
+.meal-title {
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.meal-description {
+    height: 100px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.price-rating-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.price {
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.price:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rating {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.star-icon {
+    background-image: url('../assets/icons/star.png');
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.rating-text {
+    letter-spacing: 0.5px;
+}

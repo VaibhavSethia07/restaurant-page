@@ -1,0 +1,59 @@
+.newsletter-page {
+    padding: 20px 0px 100px 0px;
+}
+
+.newsletter-container {
+    height: 415px;
+    width: 1265px;
+    margin: 40px auto;
+    background-image: url("https://images.unsplash.com/photo-1643298873932-1572f1e6c99f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJha2VyeXxlbnwwfDB8MHxibGFja3w%3D&auto=format&fit=crop&w=625&h=230&q=60");
+    background-size:cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 85px 320px;
+}
+
+.newsletter-info {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.newsletter-form {
+    margin-top: 45px;
+    display: flex;
+    position: relative;
+}
+
+input[type="email"] {
+    width: 545px;
+    padding: 15px 25px;
+    margin-left: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.join-btn {
+    position: absolute;
+    right:0px;
+    top: -12px;
+    width: 125px;
+    height: 58px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size:1.2rem;
+    
+}
