@@ -55,6 +55,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./src/assets/icons/burger.ico",
       title: "Foodie",
       filename: "index.html",
       template: "src/templates/template.html",

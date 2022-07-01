@@ -12,26 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="company-name-large"><a href="#">Foodie</a></div>
         <div class="nav-options">
-            <div class="nav-option"><a href="#">Home</a></div>
-            <div class="nav-option"><a href="#">Menu</a></div>
-            <div class="nav-option"><a href="#">FAQ</a></div>
+            <div class="nav-option"><a href="#home-page">Home</a></div>
+            <div class="nav-option"><a href="#menu-page">Menu</a></div>
+            <div class="nav-option"><a href="#faq-page">FAQ</a></div>
         </div>
     </nav>
-    <main class="home-page">
+    <main id="home-page">
         <div class="advertisement-container">
             <div class="quote-container">
                 <div class="catchy-line">Eat today<br><span class="catchy-line-2">Live another day</span></div>
                 <p class="quote-text">Great teams eat together and grow together.</p>
                 <p class="quote-text">Our high-quality, family-style meals are designed to foster authentic connection and team synergy.</p>
-                <button class="order-btn">Order Now</button>
+                <button class="btn order-btn">Order Now</button>
             </div>
             <div class="location-container">
                 <div class="address">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="30px" width="30px"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192H384z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="30px" width="30px"><path d="M384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192H384z"/></svg>
                     </div>
                     <div class="address-text">
                         Two Horizon Center, Golf Course Rd, DLF Phase 5,<br> Sector 43, Gurugram, Haryana 122002
@@ -39,7 +39,7 @@
                 </div>
                 <div class="time">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30px" width="30px"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M232 120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120V243.2L365.3 300C376.3 307.4 379.3 322.3 371.1 333.3C364.6 344.3 349.7 347.3 338.7 339.1L242.7 275.1C236 271.5 232 264 232 255.1L232 120zM256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0zM48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48C141.1 48 48 141.1 48 256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30px" width="30px"><path d="M232 120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120V243.2L365.3 300C376.3 307.4 379.3 322.3 371.1 333.3C364.6 344.3 349.7 347.3 338.7 339.1L242.7 275.1C236 271.5 232 264 232 255.1L232 120zM256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0zM48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48C141.1 48 48 141.1 48 256z"/></svg>
                     </div>
                     <div class="time-text">
                         <div class="day-time-container">
@@ -103,12 +103,12 @@
             </div>
         </div>
     </main>
-    <main class="menu-page">
+    <main id="menu-page">
         <div class="meal-choice-container">
             <div class="meal-choices">
-                <button class="meal-btn" id="breakfast">Breakfast</button>
-                <button class="meal-btn" id="lunch">Lunch</button>
-                <button class="meal-btn" id="dinner">Dinner</button>
+                <button class="btn meal-btn" id="breakfast">Breakfast</button>
+                <button class="btn meal-btn" id="lunch">Lunch</button>
+                <button class="btn meal-btn" id="dinner">Dinner</button>
             </div>
         </div>
         <div class="meals-grid">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </main>
-    <main class="faq-page">
+    <main id="faq-page">
         <h1 class="faq-heading">Frequently Asked Questions</h1>
         <div class="faqs">
             <div class="question-container">
@@ -139,53 +139,61 @@
             </div>
         </div>
     </main>
-    <main class="newsletter-container">
-        <div class="newsletter-info">Join our community and get discount upto 50%</div>
-        <form action="" method="post">
-            <input type="email" name="email" id="email" placehoolder="Enter your email here">
-            <button for="email" class="join-btn">Join</button>
-        </form>
+    <main class="newsletter-page">
+        <div class="newsletter-container">
+            <div class="newsletter-info">Join our community and get discount upto 50%</div>
+            <form action="" method="post" class="newsletter-form">
+                <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                <button for="email" class="btn join-btn">Join</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="company-follow">
-            <div class="company-name-small">Foodie</div>
-            <p class="company-info"></p>
+            <div class="company-name-small"><a href="#">Foodie</a></div>
+            <p class="company-info">Eat today</br>Live another day</p>
             <div class="social-media-handles">
-                <div class="facebook"></div>
-                <div class="twitter"></div>
-                <div class="instagram"></div>
-                <div class="linkedin"></div>
+                <a class="social-media-icon facebook hvr-box-shadow-outset" href="https://www.facebook.com/vaibhav.sethia.754">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="25px" width="25px"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+                <div class="social-media-icon twitter hvr-box-shadow-outset" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="25px" width="25px"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </div>
+                <div class="social-media-icon instagram hvr-box-shadow-outset" href="https://www.instagram.com/vaibhavsethia07/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="25px" width="25px"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <a class="social-media-icon linkedin hvr-box-shadow-outset" href="https://www.linkedin.com/in/vaibhav-sethia-650635125/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="25px" width="25px"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </a>
             </div>
-            <div class="credits">&copy; 2022 Vaibhav Sethia. All rights reserved.</div>
+            <div class="credits">&copy; 2022 Vaibhav Sethia. All rights reserved.</br>Backgrounds: <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a></br>Fonts: <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></br>Icons: <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a></br>Images: <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a> </div>
         </div>
         <div class="useful-info">
             <div class="heading">Support</div>
-            <div class="useful-text">Account</div>
-            <div class="useful-text">Support Center</div>
-            <div class="useful-text">Feedback</div>
-            <div class="useful-text">Accessibility</div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Account</a> </div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Support Center</a> </div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Feedback</a> </div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Accessibility</a> </div>
         </div>
         <div class="useful-info">
-            
             <div class="heading">Our Menu</div>
-            <div class="useful-text">Special</div>
-            <div class="useful-text">Popular</div>
-            <div class="useful-text">Categories</div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Special</a> </div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Popular</a> </div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Categories</a> </div>
         </div>
         <div class="useful-info">
-            
             <div class="heading">Useful Links</div>
-            <div class="useful-text">Payment & Tax</div>
-            <div class="useful-text">Terms of Service</div>
-            <div class="useful-text">Privacy Policy</div>
-            <div class="useful-text">About us</div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Payment & Tax</a></div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Terms of Service</a></div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">Privacy Policy</a></div>
+        <div class="useful-text"><a href="#" rel="noopener noreferrer">About us</a></div>
         </div>
         <div class="useful-info">
             <div class="heading">Get in touch</div>
             <div class="useful-text"><a href="mailto:foodie.official@gmail.com">foodie.official@gmail.com</a></div>
             <div class="useful-text">+880 1777 785888</div>
         </div>
-    </footer>
+    </footer> -->
     <script src="index.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     padding:  0px;
     font-family: 'Nunito', sans-serif;
     text-align: justify;
-}
+} 
 
 a {
     text-decoration: none;
@@ -48,9 +48,8 @@ nav {
     color: rgb(82,86,103);
 }
 
-.home-page {
+#home-page {
     height: 764px;
-    /* <a href='https://www.freepik.com/photos/food-ingredients'>Food ingredients photo created by freepik - www.freepik.com</a> */
     background-image: url('../assets/backgrounds/fresh-colourful-ingredients-mexican-cuisine.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +123,7 @@ nav {
     width: 100%;
 }
 
-.menu-page {
+#menu-page {
     background-image: url('../assets/backgrounds/augustine-wong-li0iC0rjvvg-unsplash.jpg');
     padding-top: 40px;
 }
@@ -140,7 +139,7 @@ nav {
     gap: 20px;
 }
 
-.meal-btn, .order-btn {
+.btn {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -160,13 +159,13 @@ nav {
   touch-action: manipulation;
 }
 
-.meal-btn:hover, .order-btn:hover {
+.btn {
   background-position: right center;
   color: #fff;
   text-decoration: none;
 }
 
-.meal-btn:active, .order-btn:active {
+.btn {
   transform: scale(0.95);
 }
 
@@ -276,7 +275,7 @@ nav {
     letter-spacing: 0.5px;
 }
 
-.faq-page {
+#faq-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,7 +327,142 @@ nav {
     text-align: justify;
 }
 
-/* <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a> */
+.newsletter-page {
+    padding: 20px 0px 100px 0px;
+}
+
+.newsletter-container {
+    height: 415px;
+    width: 1265px;
+    margin: 40px auto;
+    background-image: url("https://images.unsplash.com/photo-1643298873932-1572f1e6c99f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJha2VyeXxlbnwwfDB8MHxibGFja3w%3D&auto=format&fit=crop&w=625&h=230&q=60");
+    background-size:cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 85px 320px;
+}
+
+.newsletter-info {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.newsletter-form {
+    margin-top: 45px;
+    display: flex;
+    position: relative;
+}
+
+input[type="email"] {
+    width: 545px;
+    padding: 15px 25px;
+    margin-left: 35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.join-btn {
+    position: absolute;
+    right:0px;
+    top: -12px;
+    width: 125px;
+    height: 58px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size:1.2rem;
+    
+}
+
+footer {
+    background-color: rgb(243,249,249);
+    padding-top: 108px;
+    padding-left: 108px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1.5fr;
+    gap: 30px;
+}
+
+.company-follow {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
+}
+
+.company-name-small a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(252,95,47);
+}
+
+.company-info {
+    color: rgb(32, 32, 33);
+    font-weight: 600;
+    padding: 1px;
+    margin-top: 20px;
+}
+
+.social-media-handles {
+    display: flex;
+    gap: 20px;
+    height: 100px;
+}
+
+.social-media-icon {
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    padding: 12.5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.social-media-icon:hover {
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    transform: scale(1.2);
+}
+
+.credits {
+    text-align: left;
+}
+
+.credits a{
+    color: black;
+}
+
+.heading {
+    padding-top: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.useful-text {
+    padding: 10px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 1.05rem;
+    color: rgb(170,173,174);
+}
+
+.useful-text a {
+    color: rgb(170,173,174);
+    text-decoration: none;   
+}
 
 
 
